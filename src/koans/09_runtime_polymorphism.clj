@@ -10,7 +10,7 @@
                    "!")))
 
 (defmulti diet (fn [x] (:eater x)))
-(defmethod diet :herbivore [a] (clojure.string/join (a " eats veggies.")))
+(defmethod diet :herbivore [a] "Bambi eats veggies.")
 (defmethod diet :carnivore [a] __)
 (defmethod diet :default [a] __)
 
