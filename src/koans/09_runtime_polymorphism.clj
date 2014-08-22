@@ -11,7 +11,7 @@
 
 (defmulti diet (fn [x] (:eater x)))
 (defmethod diet :herbivore [a] "Bambi eats veggies.")
-(defmethod diet :carnivore [a] __)
+(defmethod diet :carnivore [a] _)
 (defmethod diet :default [a] __)
 
 (meditations
